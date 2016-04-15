@@ -49,12 +49,12 @@ int main()
                         cout<<"[7] Odblokuj Bazę Danych"<<endl;
                         cout<<"[8] Wyczyść Cache"<<endl;
                         cout<<"[9] Usuń Pakiet"<<endl;
-                        cout<<"[0] Znajdź pakiet"<<endl<<endl;
+                        cout<<"[0] Znajdź Pakiet"<<endl<<endl;
 
                         cout<<"Dostęp do repozytoriów Manjaro:"<<endl<<endl;
-                        cout<<"[U] Manjaro Repozytoria Niestabilne"<<endl;
-                        cout<<"[T] Manjaro Repozytoria Testowe"<<endl;
-                        cout<<"[S] Manjaro Repozytoria Stabilne "<<endl<<endl;
+                        cout<<"[U] Repozytoria Niestabilne"<<endl;
+                        cout<<"[T] Repozytoria Testowe"<<endl;
+                        cout<<"[S] Repozytoria Stabilne "<<endl<<endl;
 
                         cout<<"[q] Powrót"<<endl;
 
