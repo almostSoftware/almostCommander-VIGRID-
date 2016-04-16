@@ -573,7 +573,8 @@ int main()
                         {
                             case '1': // pogoda
                             {
-                                string lokalizacja;
+                                system("clear");
+                                sring lokalizacja;
                                 string pogoda = "curl http://wttr.in/";
                                 cout << "Podaj nazwę miejscowości (bez polskich znaków): ";
                                 cin >> lokalizacja;
@@ -588,6 +589,7 @@ int main()
 
                             case '2': // YT
                             {
+                                system("clear");
                                 string url;
                                 string wideo = "youtube-dl ";
                                 cout << "Podaj URL pliku: ";
@@ -603,6 +605,7 @@ int main()
 
                             case '3': // Mp3
                             {
+                                system("clear");
                                 string url;
                                 string wideo = "youtube-dl -x --audio-format mp3 ";
                                 cout << "Podaj URL pliku: ";
