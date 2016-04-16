@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
 
@@ -574,7 +575,7 @@ int main()
                             case '1': // pogoda
                             {
                                 system("clear");
-                                sring lokalizacja;
+                                string lokalizacja;
                                 string pogoda = "curl http://wttr.in/";
                                 cout << "Podaj nazwę miejscowości (bez polskich znaków): ";
                                 cin >> lokalizacja;
