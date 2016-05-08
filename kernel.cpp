@@ -152,7 +152,12 @@ void kernel_installer()
                         string kernel;
                         string program = "sudo mhwd-kernel -r ";
 
-                        cout << "Podaj nazwę kernela do usunięcia: ";
+                        system("clear");
+
+                        cout<<"Aktualnie posiadasz następujące jądra systemu: "<<endl<<endl;
+                        system("mhwd-kernel -li");
+
+                        cout << "\n\nPodaj nazwę kernela do usunięcia (np linux310): ";
                         cin>>kernel;
                         program+=kernel;
                         system (program.c_str()  );
