@@ -181,7 +181,7 @@ void pacman()
                 case 'U': // Unstable Repo
                 {
                     system("clear");
-                    system("sudo pacman-mirrors -g -b unstable");
+                    system("sudo pacman-mirrors -g -b unstable && sudo pacman -Syu");
                     cout<<"\nPowrót do MENU [enter]";
                     getchar();getchar();
                     system("clear");
@@ -192,7 +192,7 @@ void pacman()
                 case 'T': // Testing Repo
                 {
                     system("clear");
-                    system("sudo pacman-mirrors -g -b testing");
+                    system("sudo pacman-mirrors -g -b testing && sudo pacman -Syu");
                     cout<<"\nPowrót do MENU [enter]";
                     getchar();getchar();
                     system("clear");
@@ -203,7 +203,7 @@ void pacman()
                 case 'S': // Stable Repo
                 {
                     system("clear");
-                    system("sudo pacman-mirrors -g -b stable");
+                    system("sudo pacman-mirrors -g -b stable && sudo pacman -Syu");
                     cout<<"\nPowrót do MENU [enter]";
                     getchar();getchar();
                     system("clear");
