@@ -7,14 +7,13 @@ using namespace std;
 
 void kernel_installer()
 {
-    cout<<"Aktualnie posiadasz następujące jądra systemu: "<<endl<<endl;
-    system("mhwd-kernel -li");
-
-
     char znak;
 
     while (znak!='q')
             {
+                cout<<"Aktualnie posiadasz następujące jądra systemu: "<<endl<<endl;
+                system("mhwd-kernel -li");
+
                 cout<<"\n\tDostępne do zainstalowania: "    <<endl<<endl;
                 cout<<"[1] Linux46 - experymentalny"        <<endl;
                 cout<<"[2] Linux45"                         <<endl;
