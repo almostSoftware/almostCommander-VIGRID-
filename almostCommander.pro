@@ -8,11 +8,15 @@ SOURCES += main.cpp \
     sysinfo.cpp \
     gui.cpp \
     other.cpp \
-    kernel.cpp
+    kernel.cpp \
+    run.cpp \
+    hwinfo.cpp
 
 HEADERS += \
     pacman.h \
     sysinfo.h \
     gui.h \
     other.h \
-    kernel.h
+    kernel.h \
+    run.h \
+    hwinfo.h

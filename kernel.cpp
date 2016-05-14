@@ -15,25 +15,27 @@ void kernel_installer()
 
     while (znak!='q')
             {
-                cout<<"\n\tDostępne do zainstalowania: "<<endl<<endl;
-                cout<<"[1] Linux46 - experymentalny"<<endl;
-                cout<<"[2] Linux45"<<endl;
-                cout<<"[3] Linux44 LTS"<<endl;
-                cout<<"[4] Linux42"<<endl;
-                cout<<"[5] Linux41 LTS"<<endl;
-                cout<<"[6] Linux319"<<endl;
-                cout<<"[7] Linux318"<<endl;
-                cout<<"[8] Linux316"<<endl;
-                cout<<"[9] Linux314"<<endl;
-                cout<<"[0] Linux313"<<endl<<endl;
+                cout<<"\n\tDostępne do zainstalowania: "    <<endl<<endl;
+                cout<<"[1] Linux46 - experymentalny"        <<endl;
+                cout<<"[2] Linux45"                         <<endl;
+                cout<<"[3] Linux44 LTS"                     <<endl;
+                cout<<"[4] Linux42"                         <<endl;
+                cout<<"[5] Linux41 LTS"                     <<endl;
+                cout<<"[6] Linux319"                        <<endl;
+                cout<<"[7] Linux318"                        <<endl;
+                cout<<"[8] Linux316"                        <<endl;
+                cout<<"[9] Linux314"                        <<endl;
+                cout<<"[0] Linux313"                        <<endl<<endl;
 
-                cout<<"[X] Odinstaluj kernel"<<endl<<endl;
+                cout<<"[X] Odinstaluj kernel"               <<endl<<endl;
 
 
-                cout<<"[q] Powrót"<<endl<<endl;
+                cout<<"[q] Powrót"                          <<endl<<endl;
 
                 cout<<"Wybieram: ";
                 cin>>znak;
+
+                system("clear");
 
                 switch(znak)
                 {
@@ -170,8 +172,8 @@ void kernel_installer()
 
                     case 'q':
                     {
-                    system("clear");
-                    break;
+                        system("clear");
+                        break;
                     }
 
             }

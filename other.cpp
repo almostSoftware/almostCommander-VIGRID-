@@ -11,16 +11,18 @@ void other()
 
     while (znak!='q')
             {
-                cout<<"\tInne: "<<endl<<endl;
-                cout<<"[1] Pogoda"<<endl;
-                cout<<"[2] Pobierz wideo"<<endl;
-                cout<<"[3] Konwertuj wideo na mp3"<<endl<<endl;
+                cout<<"\tInne: "                    <<endl<<endl;
+                cout<<"[1] Pogoda"                  <<endl;
+                cout<<"[2] Pobierz wideo"           <<endl;
+                cout<<"[3] Konwertuj wideo na mp3"  <<endl<<endl;
 
 
-                cout<<"[q] Powrót"<<endl<<endl;
+                cout<<"[q] Powrót"                  <<endl<<endl;
 
                 cout<<"Wybieram: ";
                 cin>>znak;
+
+                system("clear");
 
                 switch(znak)
                 {
@@ -29,7 +31,10 @@ void other()
                         string lokalizacja;
                         string pogoda = "curl http://wttr.in/";
                         cout << "Podaj nazwę miejscowości (bez polskich znaków): ";
-                        cin >> lokalizacja;
+
+                        cin.ignore();
+                        getline(cin, lokalizacja);
+
                         pogoda+=lokalizacja;
                         system (pogoda.c_str()  );
                         cout<<"\nPowrót do MENU [enter]";
@@ -71,8 +76,8 @@ void other()
 
                     case 'q':
                     {
-                    system("clear");
-                    break;
+                        system("clear");
+                        break;
                     }
 
             }

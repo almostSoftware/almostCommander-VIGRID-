@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <unistd.h>
 
+#include "hwinfo.h"
+
 using namespace std;
 
 void sysinfo()
@@ -11,37 +13,28 @@ void sysinfo()
 
     while (znak!='q')
         {
-            cout<<"\tInformacje o systemie: "<<endl<<endl;
-            cout<<"[1] OS, Kernel"<<endl;
-            cout<<"[2] Screenfetch"<<endl;
-            cout<<"[3] Menadżer procesów"<<endl<<endl;
-            cout<<"[4] O użytkowniku "<<endl;
-            cout<<"[5] Informacje o sprzęcie"<<endl;
-            cout<<"[6] Informacje o CPU"<<endl;
-            cout<<"[7] Informacje szczegółowe"<<endl<<endl;
-            cout<<"[8] Czujniki"<<endl;
-            cout<<"[9] Analiza startu systemu"<<endl<<endl;
+            cout<<"\tInformacje o systemie: "            <<endl;
 
+            cout<<"[1] Screenfetch"                      <<endl;
+            cout<<"[2] Menadżer procesów"                <<endl<<endl;
 
-            cout<<"[q] Powrót"<<endl;
+            cout<<"[3] Informacje o CPU        (lscpu)"  <<endl;
+            cout<<"[4] Informacje o sprzęcie   (inxi)"   <<endl;
+            cout<<"[5] Informacje szczegółowe  (mhwd)"   <<endl;
+            cout<<"[6] Poszczególne podzespoły (hwinfo) "<<endl<<endl;
+
+            cout<<"[7] Czujniki"                         <<endl;
+            cout<<"[8] Analiza startu systemu"           <<endl<<endl;
+
+            cout<<"[q] Powrót"                           <<endl;
 
             cout<<"\nWybieram: ";
             cin>>znak;
 
             switch(znak)
             {
-                case '1': // Uname
-                {
-                    system("clear");
-                    system("uname -a");
-                    cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
-                    system("clear");
 
-                    break;
-                }
-
-                case '2': // Screenfetch
+                case '1': // Screenfetch
                 {
                     system("clear");
                     system("screenfetch");
@@ -52,7 +45,7 @@ void sysinfo()
                     break;
                 }
 
-                case '3': // Htop
+                case '2': // Htop
                 {
                     system("clear");
                     system("htop");
@@ -63,29 +56,7 @@ void sysinfo()
                     break;
                 }
 
-                case '4': // W
-                {
-                    system("clear");
-                    system("w");
-                    cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
-                    system("clear");
-
-                    break;
-                }
-
-                case '5':
-                {
-                    system("clear");
-                    system("inxi -Fxz");    //system("mhwd -lh -d");
-                    cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
-                    system("clear");
-
-                    break;
-                }
-
-                case '6':
+                case '3':
                 {
                     system("clear");
                     system("lscpu");
@@ -96,7 +67,18 @@ void sysinfo()
                     break;
                 }
 
-                case '7':
+                case '4':
+                {
+                    system("clear");
+                    system("inxi -Fxz");
+                    cout<<"\nPowrót do MENU [enter]";
+                    getchar();getchar();
+                    system("clear");
+
+                    break;
+                }
+
+                case '5':
                 {
                     system("clear");
                     system("mhwd -lh -d");
@@ -107,8 +89,14 @@ void sysinfo()
                     break;
                 }
 
+                case '6':
+                {
+                    hwinfo();
 
-                case '8':
+                    break;
+                }
+
+                case '7':
                 {
                     system("clear");
                     system("sensors");
@@ -119,7 +107,7 @@ void sysinfo()
                     break;
                 }
 
-                case '9':
+                case '8':
                 {
                     system("systemd-analyze time");
                     system("systemd-analyze blame");

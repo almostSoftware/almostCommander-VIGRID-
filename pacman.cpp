@@ -12,27 +12,31 @@ void pacman()
 
     while (znak!='q')
         {
-            cout<<"\tPacman:"<<endl<<endl;
-            cout<<"[1] Aktualizacja Systemu"<<endl;
+            cout<<"\tAktualizacje:"                     <<endl;
+            cout<<"[1] Aktualizacja Systemu"            <<endl;
             cout<<"[2] Aktualizacja Systemu (wymuszona)"<<endl;
-            cout<<"[3] Aktualizacja Systemu (+AUR)"<<endl;
-            cout<<"[4] Instalacja Pakietu"<<endl;
-            cout<<"[5] Instalacja Pakietu (AUR)"<<endl;
-            cout<<"[6] Klucze Pacman "<<endl;
-            cout<<"[7] Odblokuj Bazę Danych"<<endl;
-            cout<<"[8] Wyczyść Cache"<<endl;
-            cout<<"[9] Usuń Pakiet"<<endl;
-            cout<<"[0] Znajdź pakiet"<<endl<<endl;
+            cout<<"[3] Aktualizacja Systemu (+AUR)"     <<endl;
+            cout<<"[4] Klucze Pacman "                  <<endl;
+            cout<<"[5] Odblokuj Bazę Danych"            <<endl<<endl;
 
-            cout<<"Dostęp do repozytoriów Manjaro:"<<endl<<endl;
-            cout<<"[U] Manjaro Repozytoria Niestabilne"<<endl;
-            cout<<"[T] Manjaro Repozytoria Testowe"<<endl;
-            cout<<"[S] Manjaro Repozytoria Stabilne "<<endl<<endl;
+            cout<<"\tInstalacja pakietów:"              <<endl;
+            cout<<"[6] Instalacja Pakietu"              <<endl;
+            cout<<"[7] Instalacja Pakietu (AUR)"        <<endl;
+            cout<<"[8] Znajdź pakiet"                   <<endl;
+            cout<<"[9] Usuń Pakiet"                     <<endl;
+            cout<<"[0] Wyczyść Cache"                   <<endl<<endl;
 
-            cout<<"[q] Powrót"<<endl;
+            cout<<"\tRepozytoria Manjaro:"   <<endl;
+            cout<<"[U] Repozytoria Niestabilne"         <<endl;
+            cout<<"[T] Repozytoria Testowe"             <<endl;
+            cout<<"[S] Repozytoria Stabilne "           <<endl<<endl;
+
+            cout<<"[q] Powrót"                          <<endl;
 
             cout<<"\nWybieram: ";
             cin>>znak;
+
+            system("clear");
 
             switch(znak)
             {
@@ -69,39 +73,7 @@ void pacman()
                     break;
                 }
 
-                case '4': // Instalacja
-                {
-                    system("clear");
-                    string pakiet;
-                    string program = "sudo pacman -S ";
-                    cout << "Podaj nazwę pakietu: ";
-                    cin >> pakiet;
-                    program+=pakiet;
-                    system (program.c_str()  );
-                    cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
-                    system("clear");
-
-                    break;
-                }
-
-                case '5': // Yaourt
-                {
-                    system("clear");
-                    string pakiet;
-                    string program = "yaourt -S ";
-                    cout << "Podaj nazwę pakietu: ";
-                    cin >> pakiet;
-                    program+=pakiet;
-                    system (program.c_str()  );
-                    cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
-                    system("clear");
-
-                    break;
-                }
-
-                case '6': // Klucze
+                case '4': // Klucze
                 {
                     system("clear");
                     system("sudo pacman -Sy archlinux-keyring manjaro-keyring && sudo pacman-key --refresh-keys && sudo pacman -Su");
@@ -112,7 +84,7 @@ void pacman()
                     break;
                 }
 
-                case '7': // Baza danych
+                case '5': // Baza danych
                 {
                     system("clear");
                     system("sudo rm /var/lib/pacman/db.lck && pacman -Syu");
@@ -123,23 +95,16 @@ void pacman()
                     break;
                 }
 
-                case '8': //Cache
-                {
-                    system("clear");
-                    system("sudo pacman -Sc");
-                    cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
-                    system("clear");
-                    break;
-                }
-
-                case '9': // Usuń
+                case '6': // Instalacja
                 {
                     system("clear");
                     string pakiet;
-                    string program = "sudo pacman -R ";
+                    string program = "sudo pacman -S ";
                     cout << "Podaj nazwę pakietu: ";
-                    cin >> pakiet;
+
+                    cin.ignore();
+                    getline(cin, pakiet);
+
                     program+=pakiet;
                     system (program.c_str()  );
                     cout<<"\nPowrót do MENU [enter]";
@@ -149,7 +114,26 @@ void pacman()
                     break;
                 }
 
-                case '0': // Szukaj
+                case '7': // Yaourt
+                {
+                    system("clear");
+                    string pakiet;
+                    string program = "yaourt -S ";
+                    cout << "Podaj nazwę pakietu: ";
+
+                    cin.ignore();
+                    getline(cin, pakiet);
+
+                    program+=pakiet;
+                    system (program.c_str()  );
+                    cout<<"\nPowrót do MENU [enter]";
+                    getchar();getchar();
+                    system("clear");
+
+                    break;
+                }
+
+                case '8': // Szukaj
                 {
                     system("clear");
                     string pakiet;
@@ -162,6 +146,35 @@ void pacman()
                     getchar();getchar();
                     system("clear");
 
+                    break;
+                }
+
+                case '9': // Usuń
+                {
+                    system("clear");
+                    string pakiet;
+                    string program = "sudo pacman -R ";
+                    cout << "Podaj nazwę pakietu: ";
+
+                    cin.ignore();
+                    getline(cin, pakiet);
+
+                    program+=pakiet;
+                    system (program.c_str()  );
+                    cout<<"\nPowrót do MENU [enter]";
+                    getchar();getchar();
+                    system("clear");
+
+                    break;
+                }
+
+                case '0': //Cache
+                {
+                    system("clear");
+                    system("sudo pacman -Sc");
+                    cout<<"\nPowrót do MENU [enter]";
+                    getchar();getchar();
+                    system("clear");
                     break;
                 }
 
@@ -202,6 +215,7 @@ void pacman()
                     system("clear");
                     break;
                 }
+
             }
        }
 }

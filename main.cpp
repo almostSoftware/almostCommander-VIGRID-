@@ -2,12 +2,15 @@
 #include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
+#include <string>
+#include <fstream>
 
 #include "pacman.h"
 #include "sysinfo.h"
 #include "kernel.h"
 #include "gui.h"
 #include "other.h"
+#include "run.h"
 
 using namespace std;
 
@@ -15,19 +18,23 @@ char znak;
 
 int main()
 {
-    cout<<" ";
+    system("clear");
 
     for(;;)
     {
-        cout<<"\talmostCommander 'VIGRID' MENU:"<<endl;
-        cout<<"\t******************************"<<endl;
-        cout<<"1. Pacman & Yaourt"<<endl;
-        cout<<"2. Informacje o systemie"<<endl;
-        cout<<"3. Zarządzanie Kernelami"<<endl;
-        cout<<"4. Instalator środowisk graficzmych"<<endl;
-        cout<<"5. Inne"<<endl;
-        cout<<"6. O 'Vigrid'"<<endl<<endl;
-        cout<<"q. Zakończ program"<<endl;
+        cout<<"\talmostCommander 'VIGRID' MENU:"    <<endl<<endl;
+
+        cout<<"[1] Pacman & Yaourt"                 <<endl;
+        cout<<"[2] Informacje o systemie"           <<endl;
+        cout<<"[3] Zarządzanie Kernelami"           <<endl;
+        cout<<"[4] Instalator środowisk graficzmych"<<endl;
+        cout<<"[5] Inne"                            <<endl<<endl;
+
+        cout<<"[6] Uruchom / Wykonaj"               <<endl<<endl;
+
+        cout<<"[7] O 'Vigrid'"                      <<endl<<endl;
+
+        cout<<"[q] Zakończ program"                 <<endl;
 
         cout<<"\nWybieram: ";
         cin>>znak;
@@ -35,13 +42,13 @@ int main()
         system("clear");
 
         switch(znak)
-            {
-            case'1':    // Pacman
+        {
+            case'1':
             {
                 pacman();
                 break;
             }
-            case '2':	// Sys info
+            case '2':
             {
                 sysinfo();
                 break;
@@ -51,31 +58,42 @@ int main()
                 kernel_installer();
                 break;
             }
-            case '4':	// Gui
+            case '4':
             {
                 gui_installer();
                 break;
             }
-            case '5':	// Inne
+            case '5':
             {
                 other();
                 break;
             }
 
-            case '6':	// O 'VIGRID'
+            case'6':
             {
-                cout<<"almostCommander 'VIGRID' to prosty programik konsolowy napisany w C++. "
-                      "Jego głównym celem jest ułatwienie i przyspieszenie podstawowych operacji w terminalu. "
-                      "Dodatkowo program został zaopatrzony m.in. w możliwość dobierania multimediów. "
-                      "\n\nWszystkie dostępne opcje 'VIGRID' zostały wstępnie przetestowane i nie powinny stwarzać problemów, jednak..."
-                      "\n\nJest to wersja testowa, proszę zachować szczególną ostrożność, najbezpieczniej będzie korzystać z programu za pośrednictwem dystrybucji zainstalowanej na Virtualboxie lub LiveCD. "
+                run();
+                break;
+            }
 
-                      "\n\nPowrót do MENU [enter]";
+            case '7':	// O 'VIGRID'
+            {
 
-                 getchar();getchar();
-                 system("clear");
+                cout<<"almostCommander 'VIGRID' to prosty programik konsolowy napisany w C++."
+                       "\nJego głównym celem jest ułatwienie i przyspieszenie podstawowych operacji w terminalu."
+                       "\nDodatkowo program został zaopatrzony m.in. w możliwość dobierania multimediów. "
 
-                  break;
+                       "\n\nWszystkie dostępne opcje 'VIGRID' zostały wstępnie przetestowane i nie powinny stwarzać problemów, jednak..."
+
+                       "\nJest to wersja testowa, proszę zachować szczególną ostrożność, najbezpieczniej będzie korzystać z programu"
+                       "\nza pośrednictwem dystrybucji zainstalowanej na Virtualboxie lub LiveCD. "<<endl<<endl;
+
+
+                cout<<"Powrót do MENU [enter]";
+
+                getchar();getchar();
+                system("clear");
+
+                break;
             }
                 case 'q':
                 exit(0);
