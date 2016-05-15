@@ -1,5 +1,5 @@
 # almostCommander-VIGRID-
-almostCommander 'VIGRID' to prosty programik konsolowy napisany w C++.
+almostCommander 'VIGRID' to prosty programik konsolowy napisany w C++ i dedykowany dystrybucji Manjaro Linux.
 Jego głównym celem jest ułatwienie i przyspieszenie podstawowych operacji w terminalu.
 Dodatkowo program został zaopatrzony m.in. w możliwość dobierania multimediów. "
 
@@ -48,4 +48,4 @@ Funkcje programu:
 	będących jego składnikami.
 
 Uruchomienie:
-Po pobraniu należy nadać skompilowanemu plikowi prawa do uruchomienia jako programu. Zalecam odpalić terminal i podać pełną ścieżkę dostępu do pliku (u mnie to będzie "/home/hp/Pobrane/almostCommander-VIGRID--master/almostCommander_64")
+Na obecną chwilę program nie posiada możliwości instalacji. Po pobraniu należy nadać skompilowanemu plikowi prawa do uruchomienia jako programu. Zalecam odpalić terminal i podać pełną ścieżkę dostępu do pliku (np "/home/hp/Pobrane/almostCommander-VIGRID--master/almostCommander_64"). Udostępniam gotowe do działania pliki dla maszyn 64 i 32 bitowych. Do samodzialnej kompilacji projektu polecam Qtcreator.
