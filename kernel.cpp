@@ -166,6 +166,7 @@ void kernel_installer()
                         system (program.c_str()  );
                         cout<<"\nPowrót do MENU [enter]";
                         getchar();getchar();
+                        system("clear");
 
                         break;
                     }
