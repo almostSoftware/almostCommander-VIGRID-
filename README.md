@@ -1,7 +1,7 @@
 # almostCommander-VIGRID-
 almostCommander 'VIGRID' to prosty programik konsolowy napisany w C++ i dedykowany dystrybucji Manjaro Linux.
 Jego głównym celem jest ułatwienie i przyspieszenie podstawowych operacji w terminalu.
-Dodatkowo program został zaopatrzony m.in. w możliwość dobierania multimediów. "
+Dodatkowo program został zaopatrzony m.in. w możliwość pobierania multimediów. "
 
 Wszystkie dostępne opcje 'VIGRID' zostały wstępnie przetestowane i nie powinny stwarzać problemów, jednak...
 
@@ -17,7 +17,7 @@ Funkcje programu:
 	Posiada też podstawowe opcje rozwiązywania problemów z kluczami i blokadą bazy danych.
 
 	Instalacja pakietów:
-	Podstawowe operacje z pakietami - instalacja (również z AUR), szukanie, usuwanie i czyszczenie Cache.
+	Podstawowe operacje z pakietami - instalacja (również z AUR), wyszukiwanie, usuwanie i czyszczenie Cache.
 
 	Repozytoria Manjaro:
 	Bardzo łatwe przełączenie pomiędzy repozytoriami stabilnymi, testowymi i niestabilnymi oraz
@@ -26,7 +26,7 @@ Funkcje programu:
 2 Informacje o systemie:
 
 	Sporo informacji o posiadanym sprzęcie zapewniają opcje korzystające m.in. z lscpu, inxi i mhwd.
-	Ponadto do wyboru mamy sprawdzenie czujników temp. czy czasu startu systemu.
+	Ponadto do wyboru mamy sprawdzenie czujników temp. czy analizę czasu startu systemu.
 
 3 Zarządzanie Kernelami:
 
@@ -48,4 +48,4 @@ Funkcje programu:
 	będących jego składnikami.
 
 Uruchomienie:
-Na obecną chwilę program nie posiada możliwości instalacji. Po pobraniu należy nadać skompilowanemu plikowi prawa do uruchomienia jako programu. Zalecam odpalić terminal i podać pełną ścieżkę dostępu do pliku (np "/home/hp/Pobrane/almostCommander-VIGRID--master/almostCommander_64"). Udostępniam gotowe do działania pliki dla maszyn 64 i 32 bitowych. Do samodzialnej kompilacji projektu polecam Qtcreator.
+Na obecną chwilę program nie posiada możliwości instalacji. Po pobraniu należy nadać skompilowanemu plikowi prawa do uruchomienia jako programu. Zalecam odpalić terminal i podać pełną ścieżkę dostępu do pliku (np "/home/user/Pobrane/almostCommander-VIGRID--master/almostCommander_64"). Udostępniam gotowe do działania pliki dla maszyn 64 i 32 bitowych (almostCommander_64 i almostCommander_32). Do samodzialnej kompilacji projektu polecam IDE Qtcreator.
