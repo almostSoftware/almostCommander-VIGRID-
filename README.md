@@ -44,5 +44,8 @@ Funkcje programu:
 
 6 Uruchom / Wykonaj:
 
-	Ta opcja pozwala na używanie własnych komend lub uruchamianie programów wewnątrz programu a nie 
+	Ta opcja pozwala na używanie własnych komend lub uruchamianie programów wewnątrz Vigrid nie 
 	będących jego składnikami.
+
+Uruchomienie:
+Po pobraniu należy nadać skompilowanemu plikowi prawa do uruchomienia jako programu. Zalecam odpalić terminal i podać pełną ścieżkę dostępu do pliku (u mnie to będzie "/home/hp/Pobrane/almostCommander-VIGRID--master/almostCommander_64")
