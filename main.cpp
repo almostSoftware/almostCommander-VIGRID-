@@ -5,12 +5,7 @@
 #include <string>
 #include <fstream>
 
-#include "pacman.h"
-#include "sysinfo.h"
-#include "kernel.h"
-#include "gui.h"
-#include "other.h"
-#include "run.h"
+#include "headers.h"
 
 using namespace std;
 

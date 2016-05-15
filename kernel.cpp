@@ -7,10 +7,12 @@ using namespace std;
 
 void kernel_installer()
 {
+
     char znak;
 
     while (znak!='q')
             {
+
                 cout<<"Aktualnie posiadasz następujące jądra systemu: "<<endl<<endl;
                 system("mhwd-kernel -li");
 

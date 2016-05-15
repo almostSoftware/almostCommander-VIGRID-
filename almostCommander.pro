@@ -13,10 +13,4 @@ SOURCES += main.cpp \
     hwinfo.cpp
 
 HEADERS += \
-    pacman.h \
-    sysinfo.h \
-    gui.h \
-    other.h \
-    kernel.h \
-    run.h \
-    hwinfo.h
+    headers.h

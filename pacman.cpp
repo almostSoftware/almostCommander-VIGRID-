@@ -108,7 +108,7 @@ void pacman()
                     program+=pakiet;
                     system (program.c_str()  );
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    getchar();
                     system("clear");
 
                     break;
@@ -127,7 +127,7 @@ void pacman()
                     program+=pakiet;
                     system (program.c_str()  );
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    getchar();
                     system("clear");
 
                     break;
@@ -162,7 +162,7 @@ void pacman()
                     program+=pakiet;
                     system (program.c_str()  );
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    getchar();
                     system("clear");
 
                     break;

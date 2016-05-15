@@ -6,19 +6,23 @@
 
 using namespace std;
 
+
+
 void run()
 {
 
-        string run;
+        string uruchom;
 
         system("clear");
 
-        cout << "Uruchom: " << run;
+        cout << "Uruchom: " << uruchom;
 
         cin.ignore();
-        getline(cin, run);
+        getline(cin, uruchom);
 
-        system(run.c_str() );
+        system(uruchom.c_str() );
+        //uruchom = "";
+        uruchom.clear();
 
         cout<<"\nPowrót do MENU [enter]";
 

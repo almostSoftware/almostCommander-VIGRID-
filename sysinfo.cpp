@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <unistd.h>
 
-#include "hwinfo.h"
+#include "headers.h"
 
 using namespace std;
 
