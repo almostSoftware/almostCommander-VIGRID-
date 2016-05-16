@@ -100,7 +100,7 @@ void pacman()
                     system("clear");
                     string pakiet;
                     string program = "sudo pacman -S ";
-                    cout << "Podaj nazwę pakietu: ";
+                    cout << "Podaj nazwę pakietu do zainstalowania: ";
 
                     cin.ignore();
                     getline(cin, pakiet);
@@ -119,7 +119,7 @@ void pacman()
                     system("clear");
                     string pakiet;
                     string program = "yaourt -S ";
-                    cout << "Podaj nazwę pakietu: ";
+                    cout << "Podaj nazwę pakietu do zainstalowania: ";
 
                     cin.ignore();
                     getline(cin, pakiet);
@@ -154,7 +154,7 @@ void pacman()
                     system("clear");
                     string pakiet;
                     string program = "sudo pacman -R ";
-                    cout << "Podaj nazwę pakietu: ";
+                    cout << "Podaj nazwę pakietu do usunięcia: ";
 
                     cin.ignore();
                     getline(cin, pakiet);
