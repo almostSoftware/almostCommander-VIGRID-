@@ -124,6 +124,14 @@ void sysinfo()
                     system("clear");
                     break;
                 }
+                
+                default:
+                {
+                    system("clear");
+                    cout<<"Wprowadzono błędny znak!"<<endl<<endl;
+
+                    break;
+                }
             }
        }
 }
