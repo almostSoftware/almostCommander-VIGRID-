@@ -128,8 +128,7 @@ void sysinfo()
                 default:
                 {
                     system("clear");
-                    cout<<"Wprowadzono błędny znak!"<<endl<<endl;
-
+                    cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
                     break;
                 }
             }
