@@ -215,6 +215,11 @@ void pacman()
                     system("clear");
                     break;
                 }
+                
+                default:
+                {
+                    cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
+                }
 
             }
        }
