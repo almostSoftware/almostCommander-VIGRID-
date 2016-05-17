@@ -224,6 +224,13 @@ void gui_installer()
                     system("clear");
                     break;
                 }
+                
+                default:
+                {
+                    cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
+                    sleep(1);
+                    system("clear");
+                }
           }
       }
 }
