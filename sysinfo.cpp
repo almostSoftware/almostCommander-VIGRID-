@@ -30,6 +30,8 @@ void sysinfo()
 
             cout<<"\nWybieram: ";
             cin>>znak;
+            
+            system("clear");
 
             switch(znak)
             {
@@ -127,7 +129,6 @@ void sysinfo()
                 
                 default:
                 {
-                    system("clear");
                     cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
                     break;
                 }
