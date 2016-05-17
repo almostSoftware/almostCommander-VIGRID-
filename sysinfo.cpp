@@ -130,7 +130,8 @@ void sysinfo()
                 default:
                 {
                     cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
-                    break;
+                    sleep(1);
+                    system("clear");
                 }
             }
        }
