@@ -216,11 +216,12 @@ void pacman()
                     break;
                 }
                 
-                default:
+                 default:
                 {
                     cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
+                    sleep(1);
+                    system("clear");
                 }
-
             }
        }
 }
