@@ -73,8 +73,13 @@ int main()
             {
             
             }*/
-                case 'q':
+            case 'q':
                 exit(0);
+                
+            default:
+            {
+            cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
+            }
         }
 
 
