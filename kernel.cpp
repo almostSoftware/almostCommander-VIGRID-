@@ -177,6 +177,11 @@ void kernel_installer()
                         system("clear");
                         break;
                     }
+                    
+                    default:
+                    {
+                        cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
+                    }
 
             }
 
