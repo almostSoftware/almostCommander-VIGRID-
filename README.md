@@ -1,6 +1,6 @@
 # almostCommander-VIGRID-
 
-/* almostSoftware to jednoosobowy, hobbystyczny, amatorski quasi-programistyczny projekt, którego głównym celem jest nauka (proszę nie mylić z nauczaniem, ja jestem uczniem) programowania w C++ i Qt. */
+/* almostSoftware to jednoosobowy, hobbystyczny, amatorski quasi-programistyczny projekt, którego głównym celem jest nauka (proszę nie mylić z nauczaniem, ja jestem uczniem) programowania w C++ i Qt poprzez próbę tworzenia prostych aplikacji użytkowych */
 
 almostCommander 'VIGRID' to prosty programik konsolowy napisany w C++ i dedykowany dystrybucji Manjaro Linux.
 Jego głównym celem jest ułatwienie i przyspieszenie podstawowych operacji w terminalu.
