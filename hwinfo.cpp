@@ -7,15 +7,16 @@ using namespace std;
 
 void hwinfo()
 {
+
     system("clear");
 
     int licznik;
 
-    while (licznik!=0)
+    while (licznik==0)
     {
-            cout<<"[1]  Bios"      <<  "\t[2]  Block"    <<    "\t[3]  Bluetooth"    <<endl;
-            cout<<"[4]  Bridge"    <<  "\t[5]  Camera"   <<    "\t[6]  CDrom"        <<endl;
-            cout<<"[7]  Chipcard"  <<  "\t[8]  CPU"      <<    "\t[9]  Disk"       <<endl;
+            cout<<"[1]  Bios"      <<  "\t[2]  Block"    <<    "\t[3]  Bluetooth"   <<endl;
+            cout<<"[4]  Bridge"    <<  "\t[5]  Camera"   <<    "\t[6]  CDrom"       <<endl;
+            cout<<"[7]  Chipcard"  <<  "\t[8]  CPU"      <<    "\t[9]  Disk"        <<endl;
             cout<<"[10] Dsl"       <<  "\t[11] Gfxcard"  <<    "\t[12] Ide"         <<endl;
             cout<<"[13] Keyboard"  <<  "\t[14] Memory"   <<    "\t[15] Modem"       <<endl;
             cout<<"[16] Monitor"   <<  "\t[17] Mouse"    <<    "\t[18] Netcard"     <<endl;
@@ -43,7 +44,7 @@ void hwinfo()
             system("clear");
 
             break;
-            }
+         }
 
         case 2:
         {
@@ -331,7 +332,8 @@ void hwinfo()
             cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
             sleep(1);
             system("clear");
-        }
+            break;
+         }
 
     }
     
