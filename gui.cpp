@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
 
@@ -59,7 +58,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S plasma-desktop");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -70,7 +69,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S xfce4 xfce4-goodies");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -81,7 +80,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S budgie-desktop");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -92,7 +91,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S cinnamon");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -103,7 +102,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S deepin-desktop");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -114,7 +113,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S gnome gnome-extra");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -125,7 +124,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S mate mate-extra");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -136,7 +135,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S lxqt");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -147,7 +146,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S lxde");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -158,7 +157,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S awesome vicious");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -169,7 +168,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S enlightenment");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -180,7 +179,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S fluxbox fbnews fluxter");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -191,7 +190,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S i3-wm i3lock i3status");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -202,7 +201,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S icewm icewm-utils icewm-themes");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -213,7 +212,7 @@ void gui_installer()
                     system("clear");
                     system("sudo pacman -S openbox oblogout obconf obmenu openbox-themes");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
