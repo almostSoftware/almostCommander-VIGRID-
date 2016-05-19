@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
 #include <string>
@@ -26,7 +25,7 @@ void run()
 
         cout<<"\nPowrót do MENU [enter]";
 
-        getchar();
+        cin.get();
         system("clear");
 
 }
