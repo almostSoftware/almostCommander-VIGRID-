@@ -1,8 +1,0 @@
-almostCommander 'VIGRID' to prosty programik konsolowy napisany w C++.
-Jego głównym celem jest ułatwienie i przyspieszenie podstawowych operacji w terminalu.
-Dodatkowo program został zaopatrzony m.in. w możliwość dobierania multimediów. "
-
-Wszystkie dostępne opcje 'VIGRID' zostały wstępnie przetestowane i nie powinny stwarzać problemów, jednak...
-
-Jest to wersja testowa, proszę zachować szczególną ostrożność, najbezpieczniej będzie korzystać z programu 
-za pośrednictwem dystrybucji zainstalowanej na Virtualboxie lub LiveCD. "
