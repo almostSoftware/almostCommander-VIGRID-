@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
 
@@ -45,7 +44,7 @@ void pacman()
                     system("clear");
                     system("sudo pacman -Syu");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -56,7 +55,7 @@ void pacman()
                     system("clear");
                     system("sudo pacman --force -Syu");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -67,7 +66,7 @@ void pacman()
                     system("clear");
                     system("yaourt -Syua");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -78,7 +77,7 @@ void pacman()
                     system("clear");
                     system("sudo pacman -Sy archlinux-keyring manjaro-keyring && sudo pacman-key --refresh-keys && sudo pacman -Su");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -89,7 +88,7 @@ void pacman()
                     system("clear");
                     system("sudo rm /var/lib/pacman/db.lck && pacman -Syu");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -108,7 +107,7 @@ void pacman()
                     program+=pakiet;
                     system (program.c_str()  );
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();
+                    cin.get();
                     system("clear");
 
                     break;
@@ -127,7 +126,7 @@ void pacman()
                     program+=pakiet;
                     system (program.c_str()  );
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();
+                    cin.get();
                     system("clear");
 
                     break;
@@ -143,7 +142,7 @@ void pacman()
                     program+=pakiet;
                     system (program.c_str()  );
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -162,7 +161,7 @@ void pacman()
                     program+=pakiet;
                     system (program.c_str()  );
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();
+                    cin.get();
                     system("clear");
 
                     break;
@@ -173,7 +172,7 @@ void pacman()
                     system("clear");
                     system("sudo pacman -Sc");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
                     break;
                 }
@@ -183,7 +182,7 @@ void pacman()
                     system("clear");
                     system("sudo pacman-mirrors -g -b unstable && sudo pacman -Syu");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -194,7 +193,7 @@ void pacman()
                     system("clear");
                     system("sudo pacman-mirrors -g -b testing && sudo pacman -Syu");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -205,7 +204,7 @@ void pacman()
                     system("clear");
                     system("sudo pacman-mirrors -g -b stable && sudo pacman -Syu");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
