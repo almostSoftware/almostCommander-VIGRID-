@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
 
@@ -38,7 +37,7 @@ void other()
                         pogoda+=lokalizacja;
                         system (pogoda.c_str()  );
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -53,7 +52,7 @@ void other()
                         wideo+=url;
                         system (wideo.c_str()  );
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -68,7 +67,7 @@ void other()
                         wideo+=url;
                         system (wideo.c_str()  );
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
