@@ -7,12 +7,12 @@ using namespace std;
 
 void hwinfo()
 {
-
     system("clear");
 
     int licznik;
+    bool numer;
 
-    while (licznik==0)
+    do
     {
             cout<<"[1]  Bios"      <<  "\t[2]  Block"    <<    "\t[3]  Bluetooth"   <<endl;
             cout<<"[4]  Bridge"    <<  "\t[5]  Camera"   <<    "\t[6]  CDrom"       <<endl;
@@ -30,7 +30,17 @@ void hwinfo()
             cout<<"\nWybieram: ";
             cin>>licznik;
 
-            system("clear");
+            numer = cin.good();
+            if(numer == false)
+            {
+                system("clear");
+                cerr<<"Proszę podać poprawną wartość!"<<endl;
+                sleep(1);
+                cin.clear();
+                cin.sync();
+
+                break;
+            }
 
 
     switch (licznik)
@@ -44,7 +54,7 @@ void hwinfo()
             system("clear");
 
             break;
-         }
+            }
 
         case 2:
         {
@@ -327,15 +337,7 @@ void hwinfo()
             break;
         }
         
-        default:
-        {
-            cout<<"Proszę podać poprawną wartość!"<<endl<<endl;
-            sleep(1);
-            system("clear");
-            break;
-         }
-
     }
     
-    }
+    }while (licznik!=0);
 }
