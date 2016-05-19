@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
 
@@ -45,7 +44,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux46");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -56,7 +55,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux45");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -67,7 +66,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux44");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -78,7 +77,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux42");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -89,7 +88,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux41");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -100,7 +99,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux319");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -111,7 +110,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux318");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -122,7 +121,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux316");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -133,7 +132,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux314");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -144,7 +143,7 @@ void kernel_installer()
                         system("clear");
                         system("sudo mhwd-kernel -i linux313");
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
@@ -165,7 +164,7 @@ void kernel_installer()
                         program+=kernel;
                         system (program.c_str()  );
                         cout<<"\nPowrót do MENU [enter]";
-                        getchar();getchar();
+                        cin.get();cin.get();
                         system("clear");
 
                         break;
