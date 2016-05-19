@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
 
@@ -41,7 +40,7 @@ void sysinfo()
                     system("clear");
                     system("screenfetch");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -52,7 +51,7 @@ void sysinfo()
                     system("clear");
                     system("htop");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -63,7 +62,7 @@ void sysinfo()
                     system("clear");
                     system("lscpu");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -74,7 +73,7 @@ void sysinfo()
                     system("clear");
                     system("inxi -Fxz");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -85,7 +84,7 @@ void sysinfo()
                     system("clear");
                     system("mhwd -lh -d");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -103,7 +102,7 @@ void sysinfo()
                     system("clear");
                     system("sensors");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
@@ -114,7 +113,7 @@ void sysinfo()
                     system("systemd-analyze time");
                     system("systemd-analyze blame");
                     cout<<"\nPowrót do MENU [enter]";
-                    getchar();getchar();
+                    cin.get();cin.get();
                     system("clear");
 
                     break;
