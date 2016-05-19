@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
 
@@ -50,7 +49,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --bios");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -61,7 +60,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --block");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -72,7 +71,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --bluetooth");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -83,7 +82,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --bridge");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -94,7 +93,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --camera");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -105,7 +104,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --cdrom");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -116,7 +115,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --chipcard");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -127,7 +126,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --cpu");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -138,7 +137,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --disk");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -149,7 +148,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --dsl");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -160,7 +159,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --gfxcard");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -171,7 +170,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --ide");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -182,7 +181,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --keyboard");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -193,7 +192,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --memory");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -204,7 +203,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --modem");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -215,7 +214,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --monitor");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -226,7 +225,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --mouse");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -237,7 +236,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --netcard");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -248,7 +247,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --network");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -259,7 +258,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --partition");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -270,7 +269,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --pci");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -281,7 +280,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --printer");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -292,7 +291,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --redasd");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -303,7 +302,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --sound");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -314,7 +313,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --usb");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
@@ -325,7 +324,7 @@ void hwinfo()
             system("clear");
             system("hwinfo --wlan");
             cout<<"\nPowrót do MENU [enter]";
-            getchar();getchar();
+            cin.get();cin.get();
             system("clear");
 
             break;
