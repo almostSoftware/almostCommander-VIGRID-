@@ -51,4 +51,4 @@ Funkcje programu:
 	będących jego składnikami.
 
 Uruchomienie:
-Na obecną chwilę program nie posiada możliwości instalacji. Po pobraniu należy nadać skompilowanemu plikowi prawa do uruchomienia jako programu. Zalecam odpalić terminal i podać pełną ścieżkę dostępu do pliku (np "/home/user/Pobrane/almostCommander-VIGRID--master/almostCommander_64"). Udostępniam gotowe do działania pliki dla maszyn 64 i 32 bitowych (almostCommander_64 i almostCommander_32). Do samodzialnej kompilacji projektu polecam IDE Qtcreator.
+Na obecną chwilę program nie posiada możliwości instalacji. Po pobraniu należy nadać skompilowanemu plikowi prawa do uruchomienia jako programu. Zalecam odpalić terminal i podać pełną ścieżkę dostępu do pliku (np "/home/user/Pobrane/almostCommander-VIGRID--master/almostCommander_64"). Udostępniam gotowe do działania pliki dla maszyn 64 i 32 bitowych (almostCommander64 i almostCommander32). Do samodzialnej kompilacji projektu polecam IDE Qtcreator.
